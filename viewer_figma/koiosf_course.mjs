@@ -1,6 +1,7 @@
 import {DomList,subscribe,getElement,ForAllElements,setElementVal,publish,GetJson,LinkClickButton,LinkToggleButton,ForceButton,LinkVisible,GetURLParam,FindDomidWithId,appendElementVal,ConvertDurationToString} from '../lib/koiosf_util.mjs';
 import {} from './koiosf_literature.mjs'// must be initialised to be able to follow up on setcurrentcourse
 import {GlobalLessonList} from './koiosf_lessons.mjs'// must be initialised to be able to follow up on setcurrentcourse
+import {GetToggleState} from '../genhtml/startgen.mjs'
 
 class CourseList {    
     constructor (source) {
@@ -168,7 +169,7 @@ async function ScrOtherMadeVisible() {
     LinkToggleButton("topicit",TopicOnOff) 
     LinkToggleButton("topicpolitics",TopicOnOff) 
     LinkToggleButton("topicentrep",TopicOnOff) 
-    LinkToggleButton("topidata",TopicOnOff) 
+    LinkToggleButton("topicdata",TopicOnOff) 
     LinkToggleButton("topiclaw",TopicOnOff) 
     LinkToggleButton("topiceconomics",TopicOnOff) 
     LinkToggleButton("topicfinance",TopicOnOff) 
