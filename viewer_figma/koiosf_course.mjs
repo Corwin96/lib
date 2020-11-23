@@ -190,6 +190,10 @@ function  TopicOnOff(event) {
     ShowItems(mask,fOn);
 }
 
+function ShowItems(tag,fOn) {
+    GlobalUrlList.FilterDataset("type",tag,fOn,true);
+}
+
 async function ScrMyMadeVisible() {
 	getElement("btnmycourses","scr_my").dispatchEvent(new CustomEvent("displayactive")); // then hide the join button
     var listofcourses=await GlobalCourseList.GetList();    
