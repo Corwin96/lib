@@ -164,7 +164,30 @@ async function ScrOtherMadeVisible() {
 		var perc=parseInt(100 * parseInt(seen) / parseInt(data.duration))
 		getElement("progressbar",c1).style.width=`${perc}%`
     }
+
+    LinkToggleButton("topicit",TopicOnOff) 
+    LinkToggleButton("topicpolitics",TopicOnOff) 
+    LinkToggleButton("topicentrep",TopicOnOff) 
+    LinkToggleButton("topidata",TopicOnOff) 
+    LinkToggleButton("topiclaw",TopicOnOff) 
+    LinkToggleButton("topiceconomics",TopicOnOff) 
+    LinkToggleButton("topicfinance",TopicOnOff) 
+     
+    ForceButton("topicit",true);
+    ForceButton("topicpolitics",true);
+    ForceButton("topicentrep",true);
+    ForceButton("topicdata",true);
+    ForceButton("topiclaw",true);
+    ForceButton("topiceconomics",true);
+    ForceButton("topicfinance",true);
 }    
+
+function  TopicOnOff(event) {
+    var mask=this.classList[1]
+    console.log("Mask: ", mask);
+    var fOn=GetToggleState(this,"displayactive"); 
+    ShowItems(mask,fOn);
+}
 
 async function ScrMyMadeVisible() {
 	getElement("btnmycourses","scr_my").dispatchEvent(new CustomEvent("displayactive")); // then hide the join button
