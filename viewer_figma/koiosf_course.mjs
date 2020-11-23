@@ -191,7 +191,7 @@ function  TopicOnOff(event) {
 }
 
 function ShowItems(tag,fOn) {
-    GlobalUrlList.FilterDataset("type",tag,fOn,true);
+    GlobalCourseList.FilterDataset("type",tag,fOn,true);
 }
 
 async function ScrMyMadeVisible() {
