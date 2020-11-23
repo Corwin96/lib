@@ -1,4 +1,4 @@
-import {DomList,subscribe,getElement,ForAllElements,setElementVal,publish,GetJson,LinkClickButton,LinkToggleButton,LinkVisible,GetURLParam,FindDomidWithId,appendElementVal,ConvertDurationToString} from '../lib/koiosf_util.mjs';
+import {DomList,subscribe,getElement,ForAllElements,setElementVal,publish,GetJson,LinkClickButton,LinkToggleButton,ForceButton,LinkVisible,GetURLParam,FindDomidWithId,appendElementVal,ConvertDurationToString} from '../lib/koiosf_util.mjs';
 import {} from './koiosf_literature.mjs'// must be initialised to be able to follow up on setcurrentcourse
 import {GlobalLessonList} from './koiosf_lessons.mjs'// must be initialised to be able to follow up on setcurrentcourse
 
